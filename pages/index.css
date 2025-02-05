@@ -101,6 +101,10 @@
   color: white;
 }
 
+.nav__link {
+  text-decoration: none;
+}
+
 .recipes__title {
   max-width: 580px;
   margin: 0;
