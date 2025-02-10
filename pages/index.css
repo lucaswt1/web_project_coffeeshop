@@ -169,9 +169,12 @@
   padding: 0;
 }
 .reservation__title {
-  margin: 0 0 80px;
+  /* margin: 0 0 80px; */
+  margin-bottom: 80px;
+  margin-top: 0;
   padding-top: 100px;
   text-align: center;
+  font-weight: 500;
   font-size: 44px;
   line-height: 52px;
 }
