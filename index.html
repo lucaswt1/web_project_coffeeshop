@@ -19,12 +19,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
@@ -118,7 +112,49 @@
         </section>
 
         <section class="reservation" id="reservation">
-          <h2>Reservation</h2>
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Nome *</label>
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                placeholder="Nome"
+                required
+              />
+              <label class="form__label" for="guest-number"
+                >Número de convidados *</label
+              >
+              <input
+                class="form__input"
+                type="number"
+                id="guest-number"
+                placeholder="1-8"
+                required
+              />
+              <label class="form__label" for="date">Data e hora *</label>
+              <input class="form__input" type="date" id="date" required />
+              <label class="form__label" for="email">Seu e-mail *</label>
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                placeholder="email@email.com"
+                required
+              />
+              <button class="form__button">Reservar uma mesa</button>
+              <div class="form__checkbox-container">
+                <input
+                  class="form__input-checkbox"
+                  type="checkbox"
+                  id="checkbox"
+                  required
+                />
+                <label for="checkbox">Eu concordo com os termos de uso</label>
+              </div>
+            </fieldset>
+          </form>
         </section>
       </main>
       <footer class="footer"></footer>
