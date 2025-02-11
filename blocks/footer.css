@@ -1,0 +1,81 @@
+.footer {
+  background-color: #0a2850;
+  color: white;
+  position: relative;
+  overflow: hidden; /*tudo que sai da caixa de footer faz desaparecer*/
+}
+
+.footer__content {
+  padding: 60px 80px 108px;
+  display: flex;
+}
+
+.footer__logo {
+  width: 105px;
+  height: 39px;
+  z-index: 1;
+}
+
+.footer__circle {
+  background-color: #2f80ed;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  position: absolute; /*absoluto em relação ao pai, que é o ".footer", caso não especificar, terá o posicionamento absoluto em relação a página inteira*/
+  top: -128px;
+  left: -44px;
+}
+
+.footer__social {
+  margin-left: auto;
+}
+
+.footer__social-heading {
+  margin: 0 auto 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__social-link {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer__social-link:hover {
+  color: #c1c1c1;
+}
+
+.footer__copyright {
+  margin: 0 0 0 80px;
+  padding-bottom: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
